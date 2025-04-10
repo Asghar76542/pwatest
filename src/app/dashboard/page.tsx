@@ -27,8 +27,20 @@ export default function DashboardPage() {
     <div className="min-h-screen bg-background">
       <header className="border-b bg-card">
         <div className="container flex h-16 items-center justify-between px-4">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-4">
             <div className="font-bold text-xl">PWA Burton</div>
+            {/* Temporary navigation buttons - remove when authentication is re-enabled */}
+            <div className="flex items-center gap-2">
+              <Button variant="outline" size="sm" asChild>
+                <a href="/dashboard">Member</a>
+              </Button>
+              <Button variant="outline" size="sm" asChild>
+                <a href="/admin">Admin</a>
+              </Button>
+              <Button variant="outline" size="sm" asChild>
+                <a href="/collector">Collector</a>
+              </Button>
+            </div>
           </div>
           <div className="flex items-center gap-4">
             <div className="text-sm font-medium">John Doe</div>
